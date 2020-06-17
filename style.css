@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  font-size: 8rem;
+  margin: 0;
+  opacity: 0.1;
+  mix-blend-mode: multiply;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper .btn {
+  padding: 6px 12px;
+  background: #f9f9f9;
+  border-radius: 3px;
+  text-decoration: none;
+  width: fit-content;
+  color: black;
+  box-shadow: 0 5px 5px -3px #33333399;
+  transform: translateY(-2px);
+  transition: all 0.05s ease;
+}
+
+.wrapper .btn:hover {
+  background: #fff;
+  box-shadow: 0 5px 5px -3px #33333333;
+  transform: translateY(0);
+  transition: all 0.05s ease;
+}
