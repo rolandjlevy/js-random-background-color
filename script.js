@@ -1,5 +1,6 @@
 const header = document.querySelector('.header');
 const btn = document.querySelector('.btn');
+let timer = false;
 
 const base = 16;
 const hexStringLength = 6;
@@ -12,11 +13,16 @@ while (counter < base) {
   counter++;
 }
 
-btn.addEventListener('click', (e) => {
-  const colour = generateHexString();
-  document.body.style.backgroundColor = colour;
-  document.body.style.transition = 'all 0.25s ease';
-  header.innerHTML = colour;
+btn.addEventListener('mousedown', (e) => {
+  timer = setInterval(() => {
+    const colour = generateHexString();
+    document.body.style.backgroundColor = colour;
+    header.innerHTML = colour;
+  }, 1);
+});
+
+btn.addEventListener('mouseup', (e) => {
+  clearInterval(timer);
 });
 
 const generateHexString = () => {

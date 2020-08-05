@@ -19,19 +19,24 @@ body {
 
 .wrapper .btn {
   padding: 6px 12px;
-  background: #f9f9f9;
+  background: #f3f3f3;
   border-radius: 3px;
   text-decoration: none;
   width: fit-content;
   color: black;
   box-shadow: 0 5px 5px -3px #33333399;
   transform: translateY(-2px);
-  transition: all 0.05s ease;
+  transition: all 0.1s ease;
+  cursor: pointer;
 }
 
 .wrapper .btn:hover {
   background: #fff;
+  transition: all 0.1s ease;
+}
+
+.wrapper .btn:active {
+  background: #fff;
   box-shadow: 0 5px 5px -3px #33333333;
   transform: translateY(0);
-  transition: all 0.05s ease;
 }
