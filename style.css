@@ -1,5 +1,11 @@
 body {
   font-family: sans-serif;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+
+body.detransition {
+  transition: none;
 }
 
 .header {
