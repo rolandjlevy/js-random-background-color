@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   btn.addEventListener('mousedown', (e) => {
     timer = setInterval(() => {
       hexColour.randomise();
-    }, 1);
+    }, 100);
   });
 
   btn.addEventListener('mouseup', (e) => {
