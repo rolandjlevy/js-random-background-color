@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  let timer;
   const header = document.querySelector('.header');
   const btn = document.querySelector('.btn');
+
+  let timer;
   const hexColour = new HexColour(header);
 
   btn.addEventListener('mousedown', (e) => {
