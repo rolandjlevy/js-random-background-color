@@ -14,14 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     hexChars.push(char);
   }
 
-  btn.addEventListener('mousedown', (e) => {
-    timer = setInterval(randomise, 1);
-  });
-
-  btn.addEventListener('mouseup', (e) => {
-    clearInterval(timer);
-  });
-
   const generateHexString = () => {
     let result = '#';
     let counter = 0;
@@ -39,6 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.backgroundColor = colour;
     header.innerHTML = colour;
   }
+
+  btn.addEventListener('mousedown', (e) => {
+    timer = setInterval(randomise, 1);
+  });
+
+  btn.addEventListener('mouseup', (e) => {
+    clearInterval(timer);
+  });
 
   randomise();
 
