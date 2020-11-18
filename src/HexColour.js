@@ -1,4 +1,4 @@
-class HexColour {
+export class HexColour {
   constructor(header) {
     this.header = header;
     this.init();
@@ -29,7 +29,7 @@ class HexColour {
     return result;
   }
   randomise() {
-    const colour = this.generateHexString();
+    const colour = this.generateHexString().toLocaleUpperCase();
     document.body.style.backgroundColor = colour;
     this.header.innerHTML = colour;
   }
